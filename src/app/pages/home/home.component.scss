@@ -1,0 +1,44 @@
+.home {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.home__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.home__toggle {
+  display: flex;
+}
+
+.home__spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.home__error {
+  color: #d32f2f;
+}
+
+.home__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "./node_modules/@angular/service-worker/config/schema.json",
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/favicon.ico", "/index.html", "/*.css", "/*.js"]
+      }
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "resources": {
+        "files": ["/assets/**", "/*.(png|jpg|jpeg|svg|webp)"]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "grades-api",
+      "urls": ["http://localhost:4000/api/grades"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 30,
+        "maxAge": "12h",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "logos",
+      "urls": ["https://logo.clearbit.com/*"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 50,
+        "maxAge": "7d"
+      }
+    }
+  ]
+}

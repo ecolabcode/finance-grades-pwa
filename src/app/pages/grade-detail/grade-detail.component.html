@@ -1,0 +1,87 @@
+<div class="detail">
+  <header class="detail__header">
+    <h2>{{ title() }}</h2>
+
+    <button mat-stroked-button color="primary" (click)="onBack()">
+      <mat-icon>arrow_back</mat-icon>
+      Back
+    </button>
+  </header>
+
+  @if (loading()) {
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  } @else if (error()) {
+  <p class="detail__error">{{ error() }}</p>
+  } @else if (grade()) {
+  <section>
+    <mat-card class="detail__summary">
+      <mat-card-header>
+        <mat-card-title>{{ grade()?.symbol }}</mat-card-title>
+        <mat-card-subtitle>{{
+          grade()?.date | date : "mediumDate"
+        }}</mat-card-subtitle>
+      </mat-card-header>
+
+      @if (grade()?.logoUrl) {
+      <img
+        mat-card-image
+        [src]="grade()?.logoUrl!"
+        alt="{{ grade()?.symbol }} logo"
+      />
+      }
+
+      <mat-card-content>
+        <p><strong>Company:</strong> {{ grade()?.gradingCompany }}</p>
+        <p><strong>Action:</strong> {{ grade()?.action }}</p>
+      </mat-card-content>
+    </mat-card>
+
+    <div class="detail__actions">
+      <button mat-raised-button color="accent" (click)="toggleDetails()">
+        <mat-icon>visibility</mat-icon>
+        @if (showDetails()) { Hide details } @else { Show all details }
+      </button>
+    </div>
+
+    @if (showDetails()) {
+    <mat-tab-group class="detail__tabs">
+      <mat-tab label="Grades">
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Grade change </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p><strong>Previous:</strong> {{ grade()?.previousGrade }}</p>
+          <p><strong>New:</strong> {{ grade()?.newGrade }}</p>
+        </mat-expansion-panel>
+      </mat-tab>
+
+      <mat-tab label="Target & Confidence">
+        <p>
+          <strong>Target price:</strong>
+          {{ grade()?.targetPrice | number : "1.0-2" }} USD
+        </p>
+
+        <p>Confidence level</p>
+        <mat-slider [min]="0" [max]="100" [disabled]="true">
+          <input matSliderThumb [value]="grade()?.confidenceLevel ?? 0" />
+        </mat-slider>
+
+        <mat-progress-bar
+          mode="determinate"
+          [value]="grade()?.confidenceLevel ?? 0"
+        ></mat-progress-bar>
+      </mat-tab>
+
+      <mat-tab label="Notes">
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title> Analyst notes </mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>{{ grade()?.notes }}</p>
+        </mat-expansion-panel>
+      </mat-tab>
+    </mat-tab-group>
+    }
+  </section>
+  }
+</div>

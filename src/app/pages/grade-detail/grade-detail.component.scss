@@ -1,0 +1,37 @@
+.detail {
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.detail__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.detail__summary {
+  margin-bottom: 1rem;
+}
+
+.detail__actions {
+  margin: 1rem 0;
+}
+
+.detail__tabs {
+  margin-top: 1rem;
+}
+
+.detail__error {
+  color: #d32f2f;
+}
+
+mat-card-subtitle,
+mat-card-content,
+mat-card-actions,
+mat-card-header,
+mat-icon,
+* {
+  color: orange !important;
+}

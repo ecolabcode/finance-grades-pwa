@@ -1,0 +1,30 @@
+<mat-card class="grade-card" (click)="onSelect()">
+  <mat-card-header>
+    <div mat-card-avatar class="grade-card__avatar">
+      {{ grade.symbol[0] }}
+    </div>
+    <mat-card-title
+      >{{ grade.symbol }} - {{ grade.gradingCompany }}</mat-card-title
+    >
+    <mat-card-subtitle>{{
+      grade.date | date : "mediumDate"
+    }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img
+    *ngIf="grade.logoUrl"
+    mat-card-image
+    [src]="grade.logoUrl"
+    alt="{{ grade.symbol }} logo"
+  />
+
+  <mat-card-content>
+    <p><strong>Action:</strong> {{ grade.action }}</p>
+    <p><strong>Previous grade:</strong> {{ grade.previousGrade }}</p>
+    <p><strong>New grade:</strong> {{ grade.newGrade }}</p>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="primary">View details</button>
+  </mat-card-actions>
+</mat-card>

@@ -1,0 +1,8 @@
+.grade-grid {
+  width: 100%;
+  cursor: pointer;
+
+  tr.mat-row:hover {
+    background-color: rgba(21, 113, 205, 0.837);
+  }
+}
