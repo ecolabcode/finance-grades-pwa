@@ -1,0 +1,92 @@
+{
+  "configVersion": 1,
+  "timestamp": 1765577185902,
+  "index": "/finance-grades-pwa/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/finance-grades-pwa/chunk-5A2FSBZ4.js",
+        "/finance-grades-pwa/chunk-EQ3GS6GQ.js",
+        "/finance-grades-pwa/favicon.ico",
+        "/finance-grades-pwa/index.html",
+        "/finance-grades-pwa/main-Q7JBHAJ6.js",
+        "/finance-grades-pwa/polyfills-B6TNHZQ6.js",
+        "/finance-grades-pwa/styles-52WF6A3K.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "grades-api",
+      "patterns": [
+        "http:\\/\\/localhost:4000\\/api\\/grades"
+      ],
+      "strategy": "freshness",
+      "maxSize": 30,
+      "maxAge": 43200000,
+      "timeoutMs": 5000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    },
+    {
+      "name": "logos",
+      "patterns": [
+        "https:\\/\\/logo\\.clearbit\\.com\\/[^/]*"
+      ],
+      "strategy": "performance",
+      "maxSize": 50,
+      "maxAge": 604800000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "/finance-grades-pwa/chunk-5A2FSBZ4.js": "7744112657efb3aace2a34e2d874fcf3991d440a",
+    "/finance-grades-pwa/chunk-EQ3GS6GQ.js": "dad279e9dc183ad5fdb30ae9753402a3b70b4f2b",
+    "/finance-grades-pwa/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/finance-grades-pwa/index.html": "ceaf62968e3ec2d0c9bab4b4b9786a3f55505738",
+    "/finance-grades-pwa/main-Q7JBHAJ6.js": "612c38fe928d8edcfa4160469d75db2086a5aefc",
+    "/finance-grades-pwa/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "/finance-grades-pwa/styles-52WF6A3K.css": "26e99687073bfa5664d299f14df59f42d88b9f0c"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
