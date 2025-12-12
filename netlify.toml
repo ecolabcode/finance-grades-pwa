@@ -1,9 +1,8 @@
-[build]
-  base = "finance-grades-pwa"
-  command = "npm ci && npm run build"
-  publish = "dist/finance-grades-pwa/browser"
 
-[[redirects]]
+  command = "cd finance-grades-pwa && npm install && npm run build"
+  publish = "finance-grades-pwa/dist/finance-grades-pwa/browser"
+
+
   from = "/*"
   to = "/index.html"
   status = 200
