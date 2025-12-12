@@ -1,6 +1,6 @@
 [build]
   command = "cd finance-grades-pwa && npm install && npm run build"
-  publish = "finance-grades-pwa/dist/finance-grades-pwa"
+  publish = "finance-grades-pwa/dist/finance-grades-pwa/browser"
 
 [[redirects]]
   from = "/*"
