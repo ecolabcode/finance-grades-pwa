@@ -1,8 +1,0 @@
-
-  command = "cd finance-grades-pwa && npm install && npm run build"
-  publish = "finance-grades-pwa/dist/finance-grades-pwa/browser"
-
-
-  from = "/*"
-  to = "/index.html"
-  status = 200
