@@ -22,7 +22,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatTabsModule,
     MatExpansionModule,
-    MatSliderModule, // 👈 asegurarte que está aquí
+    MatSliderModule,
     MatProgressBarModule,
     MatCardModule,
   ],
