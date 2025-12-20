@@ -22,7 +22,7 @@
   "dataGroups": [
     {
       "name": "grades-api",
-      "urls": ["http://localhost:4000/api/grades"],
+      "urls": ["https://financialmodelingprep.com/stable/grades*"],
       "cacheConfig": {
         "strategy": "freshness",
         "maxSize": 30,
