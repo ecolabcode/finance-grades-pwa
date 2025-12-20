@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1765578187436,
-  "index": "/finance-grades-pwa/index.html",
+  "timestamp": 1766272652389,
+  "index": "finance-grades-pwa/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/finance-grades-pwa/chunk-5A2FSBZ4.js",
-        "/finance-grades-pwa/chunk-EQ3GS6GQ.js",
-        "/finance-grades-pwa/favicon.ico",
-        "/finance-grades-pwa/index.html",
-        "/finance-grades-pwa/main-Q7JBHAJ6.js",
-        "/finance-grades-pwa/polyfills-B6TNHZQ6.js",
-        "/finance-grades-pwa/styles-52WF6A3K.css"
+        "finance-grades-pwa/chunk-5A2FSBZ4.js",
+        "finance-grades-pwa/chunk-EQ3GS6GQ.js",
+        "finance-grades-pwa/favicon.ico",
+        "finance-grades-pwa/index.html",
+        "finance-grades-pwa/main-MK7I5N46.js",
+        "finance-grades-pwa/polyfills-B6TNHZQ6.js",
+        "finance-grades-pwa/styles-52WF6A3K.css"
       ],
       "patterns": []
     },
@@ -36,7 +36,7 @@
     {
       "name": "grades-api",
       "patterns": [
-        "http:\\/\\/localhost:4000\\/api\\/grades"
+        "https:\\/\\/financialmodelingprep\\.com\\/stable\\/grades[^/]*"
       ],
       "strategy": "freshness",
       "maxSize": 30,
@@ -62,13 +62,13 @@
     }
   ],
   "hashTable": {
-    "/finance-grades-pwa/chunk-5A2FSBZ4.js": "7744112657efb3aace2a34e2d874fcf3991d440a",
-    "/finance-grades-pwa/chunk-EQ3GS6GQ.js": "dad279e9dc183ad5fdb30ae9753402a3b70b4f2b",
-    "/finance-grades-pwa/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
-    "/finance-grades-pwa/index.html": "dd0aec7555b89d10fee7b072f9a5f9a8c1d22602",
-    "/finance-grades-pwa/main-Q7JBHAJ6.js": "612c38fe928d8edcfa4160469d75db2086a5aefc",
-    "/finance-grades-pwa/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
-    "/finance-grades-pwa/styles-52WF6A3K.css": "26e99687073bfa5664d299f14df59f42d88b9f0c"
+    "finance-grades-pwa/chunk-5A2FSBZ4.js": "7744112657efb3aace2a34e2d874fcf3991d440a",
+    "finance-grades-pwa/chunk-EQ3GS6GQ.js": "dad279e9dc183ad5fdb30ae9753402a3b70b4f2b",
+    "finance-grades-pwa/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "finance-grades-pwa/index.html": "524192226fec18d52ce3da44e27263c21a3c61de",
+    "finance-grades-pwa/main-MK7I5N46.js": "c1e553cb6e7cf6ef1fb28421a86860d841ae8ea3",
+    "finance-grades-pwa/polyfills-B6TNHZQ6.js": "bf76ac291d7f51c1139b7edcf86b359a30c08c64",
+    "finance-grades-pwa/styles-52WF6A3K.css": "26e99687073bfa5664d299f14df59f42d88b9f0c"
   },
   "navigationUrls": [
     {
